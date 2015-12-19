@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Italianno);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+@import url(https://fonts.googleapis.com/css?family=Vibur);
+@import url(https://fonts.googleapis.com/css?family=Princess+Sofia);
+@import url(https://fonts.googleapis.com/css?family=Euphoria+Script);
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script);
+
+::cue(.system){
+  font-size: 100px;
+  font-family: Pacifico, cursive;
+  color: gold;
+}
+::cue(.hate){
+  font-size: 20px;
+  font-family: 'Homemade Apple', cursive;
+  color: coral;
+  background-color: crimson;
+}
+::cue(.asco){
+  font-size: 25px;
+  font-family: 'Princess Sofia', cursive;
+  /*font-family: 'Bad Script', cursive;*/
+  color: silver;
+  background-color: seagreen; 
+}
+::cue(.like){
+  font-family: 'Vibur', cursive;
+  /*font-family: 'Abel', sans-serif;*/
+  color: black;
+  background-color: gold;
+}
+::cue(.sad){
+  font-size: 35px;
+  font-family: 'Rouge Script', cursive;
+  text-decoration: bold;
+  color: lightsteelblue;
+  background-color: royalblue;
+}
+::cue(.love){
+  text-decoration: bold;
+  /*font-size: 40px;*/
+  font-family: 'Euphoria Script', cursive;
+  /*font-family: 'Italianno', cursive;*/
+  color: white;
+  background-color: magenta;
+}
+::cue(.dato){
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  background-color: white;
+}

@@ -1,0 +1,11 @@
+<header>
+  <span id="logo">
+    <% if current_user %>
+      Object.call(<%= current_user.nickname %>)
+    <% else %>
+      D V
+    <% end %>
+  </span>
+  <span id="log-off" class="hidden">Log-Out</span>
+  <em id="lema">❝ s p r e a d &nbsp; t h e &nbsp; d i s ❞</em>
+</header>

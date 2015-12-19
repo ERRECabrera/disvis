@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DisVis</title>
+  <%= favicon_link_tag 'disvis_icon.ico' %>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link href="http://vjs.zencdn.net/5.3.0/video-js.css" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all' %>  
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="Comparte comentarios sobre video con otros usuarios." name="description">
+  <meta content="Raúl Cabrera Medina" name="author">
+</head>
+<body>
+  <%= render partial: 'partials/header' %>
+  <%= yield %>
+  <script src="http://vjs.zencdn.net/5.3.0/video.js"></script>
+  <script type="text/javascript" src="https://players.brightcove.net/videojs-overlay/lib/videojs-overlay.js"></script>
+</body>
+</html>

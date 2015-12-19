@@ -1,0 +1,58 @@
+<div id="player-space" class="disabled">
+  <canvas class="log-in hidden disabled" width="1024" height="500"></canvas>
+</div>
+<div id="div-video" class="hidden disabled">
+  <video id="videoplayer" class="video-js" controls preload="auto" width="" height=""
+  poster="" data-setup="{}" preload="auto" autoplay="" loop="" controls="false">
+    <source id="random" src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_10mb.mp4"<% current_video.videosrc %> type='video/mp4'>
+  <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+  </p>
+  </video>
+  <img id="loading-gif" class="hidden" src="images/loading_land1.gif">
+</div>
+<div id="file-overlay" class="position-overlay hidden">
+  <div  class="background-transparent position-overlay"></div>
+  <div  class="hvr-underline-from-left" id="upfile-button">Load your video!</div>
+  <input type="file" id="input-video" name="input-video-file" accept="video/*" style="display:none">
+</div>
+<div class="log-in hidden">
+  <div>
+    <div id="sign">
+      <input type="text" id="nick" placeholder="NickName">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" autocomplete="off" placeholder="Password">
+      <img src="images/male.png" id="male" title="male" style="outline: rgb(153, 255, 255) solid 2px;" class="checked">
+      <img src="images/female.png" id="female" title="female">
+      <input id="token" name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+      <span>
+        <span id="sign-in">SIGN IN</span><span> / </span><span id="register">REGISTER</span>
+      </span>
+      <input type="submit" id="submit" class="hidden">
+      <div id="error" class="hidden">
+        <p class="hvr-bubble-top"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="coments-online">
+  <form id="js-coment" class="hidden">
+    <input type="text" id="input-coment" class="disabled" name="coment" placeholder="Post your dis here ~">
+    <input type="icon" id="asco" class="disabled" name="asco">
+    <input type="icon" id="hate" class="disabled" name="hate">
+    <input type="icon" id="like" class="disabled" name="like" placeholder="First select dis's type">
+    <input type="icon" id="sad" class="disabled" name="sad">
+    <input type="icon" id="love" class="disabled" name="love" placeholder="Now post your dis">
+    <input type="icon" id="dato" class="disabled" name="dato">
+    <input id="cue_token" name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  </form>
+  <div id="icons" class="hidden">
+    <img class="hate" name="hate" src="icons/hate.redimensionado.png">
+    <img class="like" name="like" src="icons/like.redimensionado.png">
+    <img class="sad" name="sad" src="icons/sad.redimensionado.png">
+    <img class="love" name="love" src="icons/love.redimensionado.png">
+    <img class="dato" name="dato" src="icons/dato.redimensionado.png">
+    <img class="asco" name="asco" src="icons/asco.redimensionado.png">
+  </div>
+</div>
