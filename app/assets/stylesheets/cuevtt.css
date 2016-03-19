@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
 @import url(https://fonts.googleapis.com/css?family=Italianno);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 @import url(https://fonts.googleapis.com/css?family=Vibur);
 @import url(https://fonts.googleapis.com/css?family=Princess+Sofia);
 @import url(https://fonts.googleapis.com/css?family=Euphoria+Script);
@@ -10,7 +10,7 @@
 
 ::cue(.system){
   font-size: 100px;
-  font-family: 'Pacifico', cursive;
+  font-family: Pacifico, cursive;
   color: gold;
 }
 ::cue(.hate){
