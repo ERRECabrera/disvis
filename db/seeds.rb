@@ -29,7 +29,7 @@ videos_login.each {|video| video.save}
 
 user = User.create(nickname: 'prueba', email: 'prueba@gmail.com', gender: 'male', role: 'user', password: '12345678')
 user.save
-video = Video.all.order('RANDOM()').first
+#video = Video.all.order('RANDOM()').first
 
 positions = [
 #  'line:20 align:start',

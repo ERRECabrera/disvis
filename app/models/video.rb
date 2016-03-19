@@ -12,12 +12,12 @@ class Video < ActiveRecord::Base
 
   def self.generate_video_login(user=nil)
     if user == nil
-      Video.all.where('videotype IN (?)', %w{trailer sexy news videoclip comercial videoart}).order('RANDOM()').first
+      video = Video.all.where('videotype IN (?)', %w{trailer sexy news videoclip comercial videoart}).order('RANDOM()').first
     elsif user.gender == 'male'
-      Video.all.where('videotype IN (?)', %w{trailer sexy news}).order('RANDOM()').first
+      video = Video.all.where('videotype IN (?)', %w{trailer sexy news}).order('RANDOM()').first
     elsif user.gender == 'female'
-      Video.all.where('videotype IN (?)', %w{videoclip comercial videoart}).order('RANDOM()').first
-    end      
+      video = Video.all.where('videotype IN (?)', %w{videoclip comercial videoart}).order('RANDOM()').first
+    end
   end
 
   def self.get_video_with_checkmd5(md5,duration=nil)
