@@ -1,5 +1,7 @@
 class SiteController < ApplicationController
 
+  @@counter = 0
+
   def current_session
     if current_user
       cues = Cue.get_with_filter(current_video,7)
@@ -11,7 +13,9 @@ class SiteController < ApplicationController
   end
 
   def home
-    @video = Video.generate_video_login(current_user)
+    #this lines fix auto reloads (videojs i think) that changes the current_video only in the backend
+    @@counter += 1 unless current_user
+    @video = @@counter % 2 == 0 && @@counter != 0 ? current_video.update_url : Video.generate_video_login(current_user) 
     session[:video_id] = @video.id
     render 'home'
   end

@@ -56,7 +56,7 @@ function enter_the_web(){
 }
 
 $(document).on('ready', function(){
-  var request = $.get('/current_session')
+  var request = $.getJSON('/current_session')
   player = videojs('videoplayer');
   player.muted(true);
   request.done(function(response){

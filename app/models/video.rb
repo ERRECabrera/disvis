@@ -40,8 +40,10 @@ class Video < ActiveRecord::Base
     form = page.form
     url = form.field_with(:name => 'url').value = youtube_url
     links_page = form.submit
-    direct_url = links_page.links_with(:href => /http:\/\/r\d/)[1].href
-    self.videosrc = direct_url != nil ? direct_url : self.update_url
+    url = links_page.links_with(:href => /http:\/\/r\d/)[1]
+    direct_url = url != nil ? url.href : self.update_url 
+    self.videosrc = direct_url
+    return self
   end
 
 private
