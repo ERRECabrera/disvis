@@ -10,7 +10,7 @@
 
 ::cue(.system){
   font-size: 100px;
-  font-family: Pacifico, cursive;
+  font-family: 'Pacifico', cursive;
   color: gold;
 }
 ::cue(.hate){
