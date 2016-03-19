@@ -8,38 +8,38 @@
 @import url(https://fonts.googleapis.com/css?family=Euphoria+Script);
 @import url(https://fonts.googleapis.com/css?family=Rouge+Script);
 
-::cue(.system){
+::cue('.system'){
   font-size: 100px;
   font-family: Pacifico, cursive;
   color: gold;
 }
-::cue(.hate){
+::cue('.hate'){
   font-size: 20px;
   font-family: 'Homemade Apple', cursive;
   color: coral;
   background-color: crimson;
 }
-::cue(.asco){
+::cue('.asco'){
   font-size: 25px;
   font-family: 'Princess Sofia', cursive;
   /*font-family: 'Bad Script', cursive;*/
   color: silver;
   background-color: seagreen; 
 }
-::cue(.like){
+::cue('.like'){
   font-family: 'Vibur', cursive;
   /*font-family: 'Abel', sans-serif;*/
   color: black;
   background-color: gold;
 }
-::cue(.sad){
+::cue('.sad'){
   font-size: 35px;
   font-family: 'Rouge Script', cursive;
   text-decoration: bold;
   color: lightsteelblue;
   background-color: royalblue;
 }
-::cue(.love){
+::cue('.love'){
   text-decoration: bold;
   /*font-size: 40px;*/
   font-family: 'Euphoria Script', cursive;
@@ -47,7 +47,7 @@
   color: white;
   background-color: magenta;
 }
-::cue(.dato){
+::cue('.dato'){
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
   background-color: white;
