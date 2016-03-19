@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151213031829) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cues", force: :cascade do |t|
     t.float    "starttime"
     t.string   "text"
@@ -27,8 +30,8 @@ ActiveRecord::Schema.define(version: 20151213031829) do
     t.integer  "starttimeround"
   end
 
-  add_index "cues", ["user_id"], name: "index_cues_on_user_id"
-  add_index "cues", ["video_id"], name: "index_cues_on_video_id"
+  add_index "cues", ["user_id"], name: "index_cues_on_user_id", using: :btree
+  add_index "cues", ["video_id"], name: "index_cues_on_video_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname"
@@ -50,4 +53,6 @@ ActiveRecord::Schema.define(version: 20151213031829) do
     t.string   "audiosrc"
   end
 
+  add_foreign_key "cues", "users"
+  add_foreign_key "cues", "videos"
 end

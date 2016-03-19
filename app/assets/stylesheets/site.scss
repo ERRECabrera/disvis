@@ -223,11 +223,15 @@ $margin_icons: 20px;
 #icons{
   position: fixed;
   bottom: 4px;
-  right: 514px;
+  width: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   opacity: 0.9;
 }
 
 img.asco{
+  display: inline-block;
   height: $size_icons;
   background-color: seagreen;
   border-radius: $border_radius_icons;
@@ -235,6 +239,7 @@ img.asco{
   cursor: pointer;
 }
 img.hate{
+  display: inline-block;
   height: $size_icons;
   background-color: crimson;
   border-radius: $border_radius_icons;
@@ -243,12 +248,14 @@ img.hate{
 }
 img.like{
   height: $size_icons;
+  display: inline-block;
   background-color: gold;
   border-radius: $border_radius_icons;
   margin-right: $margin_icons;
   cursor: pointer;
 }
 img.sad{
+  display: inline-block;
   height: $size_icons;
   background-color: royalblue;
   border-radius: $border_radius_icons;
@@ -256,6 +263,7 @@ img.sad{
   cursor: pointer;
 }
 img.love{
+  display: inline-block;
   height: $size_icons;
   background-color: magenta;
   border-radius: $border_radius_icons;
@@ -263,6 +271,7 @@ img.love{
   cursor: pointer;
 }
 img.dato{
+  display: inline-block;
   height: $size_icons;
   background-color: black;
   border-radius: $border_radius_icons;

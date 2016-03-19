@@ -18,6 +18,8 @@ class Video < ActiveRecord::Base
     elsif user.gender == 'female'
       video = Video.all.where('videotype IN (?)', %w{videoclip comercial videoart}).order('RANDOM()').first
     end
+    video.update_url
+    return video
   end
 
   def self.get_video_with_checkmd5(md5,duration=nil)
@@ -29,6 +31,17 @@ class Video < ActiveRecord::Base
       new_video.save
       self.get_video_with_checkmd5(md5)
     end
+  end
+
+  def update_url
+    youtube_url = self.videosrc
+    agent = Mechanize.new
+    page = agent.get('http://keepvid.com/')
+    form = page.form
+    url = form.field_with(:name => 'url').value = youtube_url
+    links_page = form.submit
+    direct_url = links_page.links_with(:href => /http:\/\/r\d/)[1].href
+    self.videosrc = direct_url != nil ? direct_url : self.update_url
   end
 
 private

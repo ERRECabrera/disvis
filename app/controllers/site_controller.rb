@@ -11,8 +11,8 @@ class SiteController < ApplicationController
   end
 
   def home
-    video = Video.generate_video_login(current_user)
-    session[:video_id] = video.id
+    @video = Video.generate_video_login(current_user)
+    session[:video_id] = @video.id
     render 'home'
   end
 
