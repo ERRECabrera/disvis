@@ -9,7 +9,7 @@ $background-color: #e3f2ff;
 $border-lines-color: #9ff;
 
 *{
-  
+
 }
 
 .hidden{
@@ -21,7 +21,7 @@ $header-height: 50px;
 header{
   /* position: fixed; */
   text-align: center;
-  color: azure;
+  color: cadetblue;
   font-family: 'Pacifico', cursive;
   background-color: $background-color;
   border-bottom: solid 2px $border-lines-color;
@@ -33,7 +33,7 @@ header{
     right: 30px;
   }
   #logo{
-    font-size: 2em;
+    font-size: 1.9em;
     position: absolute;
     top: -5px;
     left: 30px;
@@ -44,7 +44,7 @@ header{
     width: 166px;
     color: cadetblue;
     background-color: aliceblue;
-    font-size: 1.1em;
+    font-size: 1.7em;
     line-height: 46px;
     cursor: pointer;
   }
@@ -53,11 +53,11 @@ header{
 
 body{
   font-family: 'Abel', sans-serif;
-  margin:0; 
-  padding:0; 
+  margin:0;
+  padding:0;
   height:100%;
   /* background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg=="); */
-  background-color: $background-color; 
+  background-color: $background-color;
 }
 
 $video-height: 700px;
@@ -100,7 +100,7 @@ input{
   font-size: 1.75em;
 }
 
-div.log-in{  
+div.log-in{
   text-align: center;
   div {
     height: 45px;
@@ -129,7 +129,7 @@ div.log-in{
     padding: 0 8px;
   }
   #error p{
-    margin-left: 120px; 
+    margin-left: 120px;
     height: 30px;
     width: 600px;
     text-align: center;
